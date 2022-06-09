@@ -42,7 +42,7 @@ const showCards2 = () => {
             </div>
             <p class="meta">
               <span class="pre-heading">${place}</span><br>
-              <span class="author">${time.toTimeString()}</span>
+              <span class="author">${time.toLocaleString('default', {month: 'long'})}</span>
             </p>
             <ol>
               ${desp}
